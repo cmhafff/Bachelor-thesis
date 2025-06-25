@@ -1,4 +1,4 @@
-# Bachelor-thesis
+# DATA-DRIVEN SEASONAL PHASE SIGNALS FOR EXPORT SALES FORECASTING
 
 
 ### Project background 
