@@ -2,7 +2,7 @@
 
 
 ### Project background 
-This project develops an ARIMAX model incorporating **data-driven Seasonal Phase Signals** to forecast weekly export sales, comparing its accuracy against traditional ARIMA and SARIMA models. It addresses the challenge of modeling complex, potentially dynamic seasonality in a limited dataset for a manufacturing firm with the aim of providing them with an accurate and adaptive to possible future scenarios forecasting tool.
+This project develops an ARIMAX model incorporating **data-driven Seasonal Phase Signals** (referred to as ARIMAX-SPS in this file) to forecast weekly export sales, comparing its accuracy against traditional ARIMA and SARIMA models. It addresses the challenge of modeling complex, potentially dynamic seasonality in a limited dataset for a manufacturing firm with the aim of providing them with an accurate and adaptive to possible future scenarios forecasting tool.
 ### Research question
 "Can incorporating seasonal phase signals as exogenous variables in an ARIMAX model affect forecasting accuracy compared to traditional ARIMA and SARIMA models, in a time series with a strong seasonality effect?"
 
@@ -10,7 +10,7 @@ This project develops an ARIMAX model incorporating **data-driven Seasonal Phase
 
 1.  **Data Preprocessing:** Weekly sales data loaded, formatted, and checked for stationarity.
 2.  **STL Decomposition:** Decomposed export sales time series into trend, seasonal, and residual components.
-3.  **Phase Signal Construction:** A multi-stage pipeline identifies and one-hot encodes seasonal phases from the smoothed seasonal component.
+3.  **Phase Signal Construction:** A pipeline identifies and one-hot encodes seasonal phases from the smoothed seasonal component.
     ![alt text](Pipeline_for_seasonal_phase_signals_construction.png "Pipeline for seasonal phase signals construction") 
 
 6.  **Model Training:**
